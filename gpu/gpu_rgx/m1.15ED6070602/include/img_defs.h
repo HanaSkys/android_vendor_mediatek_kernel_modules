@@ -438,10 +438,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define BITMASK_HAS(f, m)     (((f) & (m)) == (m)) /* the bits from the mask are all set */
 #define BITMASK_ANY(f, m)     (((f) & (m)) != 0U)  /* any bit from the mask is set */
 
+#undef MAX
 #ifndef MAX
 #define MAX(a ,b)	(((a) > (b)) ? (a) : (b))
 #endif
 
+#undef MIN
 #ifndef MIN
 #define MIN(a, b)	(((a) < (b)) ? (a) : (b))
 #endif

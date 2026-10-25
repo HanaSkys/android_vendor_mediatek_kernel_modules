@@ -96,6 +96,7 @@ uint256_t;
 
 #if defined(__GNUC__)
 
+#undef MIN
 #ifndef MIN
 #define MIN(a, b) \
  ({__typeof(a) _a = (a); __typeof(b) _b = (b); _a > _b ? _b : _a;})
